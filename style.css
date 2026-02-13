@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: #fdfdfd;
+    font-family: "Space Grotesk", sans-serif;
+}
+
+#viewport {
+    width: 100vw;
+    height: 100vh;
+    overflow: auto;
+    cursor: grab;
+}
+
+#map {
+    position: relative;
+    width: 3000px;
+    height: 3000px;
+    background-image: radial-gradient(#797979 1px, transparent 1px);
+    background-size: 50px 50px;
+}
+
+.confession-item {
+    position: absolute;
+    white-space: nowrap;
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: bold;
+    color: #333;
+    pointer-events: auto;
+    z-index: 10;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: white;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid #ddd;
+    z-index: 1000;
+    font-family: "Space Grotesk", sans-serif;
+}
+
+#confessionForm {
+    width: 90%;
+    max-width: 500px;
+    display: flex;
+}
+
+input {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    outline: none;
+    font-family: "Space Grotesk", sans-serif;
+}
+
+button {
+    margin-left: 10px;
+    padding: 0 20px;
+    border-radius: 25px;
+    border: none;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+    font-family: "Space Grotesk", sans-serif;
+}
+
+.logo-container {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 2000;
+    pointer-events: none;
+}
+
+.logo-img {
+    width: 80px;
+    height: auto;
+    pointer-events: auto;
+    filter: drop-shadow(0px 2px 5px rgba(0, 0, 0, 0.1));
+}
+
+#viewport {
+    z-index: 1;
+}
+.initial-loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 500; 
+    font-family: "Space Grotesk", sans-serif;
+}
+
+.initial-loader p {
+    font-size: 1.2rem;
+    color: #666;
+    letter-spacing: 1px;
+    animation: pulse 1.5s infinite ease-in-out;
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 0.5; }
+    50% { opacity: 1; }
+}
