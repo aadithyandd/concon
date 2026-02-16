@@ -12,22 +12,27 @@
 <body onload="start()">
     <div class="logo-container">
         <img src="images/CONCON2.png" alt="College Logo" class="logo-img"><br>
-        <span style="font-size: 10px; font-weight: bold; padding-left: 30px; color:rgb(107, 107, 107);">LMC</span>
+        <span style="font-size: 10px; font-weight: bold; padding-left: 15px; color:rgb(107, 107, 107);">LMC V1.2.0</span>
     </div>
-
     <div id="viewport">
         <div id="initialLoader" class="initial-loader">
             <p>Loading confessions...</p>
         </div>
+        <div class="controls-container">
+            <button id="reloadBtn" class="icon-btn">⟳</button>
+        </div><br>
         <div id="map"></div>
     </div>
-
     <div class="footer">
-        <form id="confessionForm">
-            <input type="text" id="confessionInput" placeholder="Write a confession..." required>
-            <button type="submit" id="sendBtn">Send</button>
-        </form><br>
-        <span id="loadingText" style="display: none; position: relative; font-size: 5px;;">Sending...</span>
+        <div class="footer-content">
+            <form id="confessionForm">
+                <input type="text" id="confessionInput" placeholder="Write a confession..." required>
+                <button type="submit" id="sendBtn">Send</button>
+                <button type="button" id="reportbtn" onclick="report()" class="report-btn">Report</button>
+            </form>
+            <span id="loadingText"
+                style="display: none; font-size: 10px; color: #888; margin-top: 5px;">Sending...</span>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
