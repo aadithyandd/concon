@@ -11,7 +11,7 @@ let placedRects = [];
 function checkuser() {
     if (!localStorage.getItem('visited')) {
         localStorage.setItem('visited', 'true');
-        alert(`Welcome to ConCon \nAn anonymous memory board (2026-2029) \n\nShare secrets & reviews. Be respectful. \n\n * INSTRUCTIONS \n 1. Click the reload button on the top right to reload confessions \n 2. Use desktop mode on mobile to have a good experience \n 3. Click on send and wait for the confession to be posted \n 4. Scroll and check every nook and corner for anonymous confessions \n\n- By ulloord`);
+        alert(`Welcome to ConCon \nAn anonymous memory board (2026-2029) \n\nShare secrets & reviews. Be respectful. \n\n * INSTRUCTIONS \n 1. Click the reload button on the top right to reload confessions \n 2. Use desktop mode on mobile to have a good experience \n 3. Click on send and wait for the confession to be posted \n 4. Scroll and check every nook and corner for anonymous confessions \n\n- By TRVD`);
     }
 }
 
